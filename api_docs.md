@@ -6,11 +6,11 @@
 ### Login
 **Endpoint:** `/auth/login`  
 **Method:** `POST`  
-**Description:** Authenticates a user and returns a JWT token.  
+**Description:** Authenticates a user and returns a JWT token note: only employees with HR group can access the rest of api endpoints and you must include auth headers and use Bearer auth in rest of api endpoints.  
 **Request Body:**  
 ```json
 {
-  "username": "string",
+  "email": "string",
   "password": "string"
 }
 ```
@@ -32,7 +32,7 @@
 **Request Body:**  
 ```json
 {
-  "username": "string",
+  "name": "string",
   "password": "string",
   "email": "string",
   "group": "string",
@@ -54,7 +54,7 @@
 ### Create Employee
 **Endpoint:** `/employees`  
 **Method:** `POST`  
-**Description:** Adds a new employee to the system.  
+**Description:** Adds a new employee to the system .  
 **Request Body:**  
 ```json
 {
@@ -133,7 +133,7 @@
     "id": "string",
     "name": "string",
     "email": "string",
-    "role": "string"
+    "group": "string"
   }
   ```
 - **404 Not Found:** Employee not found.
@@ -166,7 +166,7 @@
 {
   "employeeId": "string",
   "date": "YYYY-MM-DD",
-  "status": "Present/Absent"
+  "status": "Present/Absent" // ignore this
 }
 ```
 **Response:**  
@@ -176,7 +176,7 @@
     "id": "string",
     "employeeId": "string",
     "date": "YYYY-MM-DD",
-    "status": "Present/Absent"
+    "status": "Present/Absent" // planned so ignore it 
   }
   ```
 - **400 Bad Request:** Validation errors.
@@ -195,7 +195,7 @@
       "id": "string",
       "employeeId": "string",
       "date": "YYYY-MM-DD",
-      "status": "Present/Absent"
+      "status": "Present/Absent"  // planned
     }
   ]
   ```
@@ -214,7 +214,7 @@
       "id": "string",
       "employeeId": "string",
       "date": "YYYY-MM-DD",
-      "status": "Present/Absent"
+      "status": "Present/Absent" // planned
     }
   ]
   ```
