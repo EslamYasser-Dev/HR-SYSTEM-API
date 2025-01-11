@@ -107,7 +107,7 @@
     "id": "string",
     "name": "string",
     "email": "string",
-    "role": "string"
+    "group": "string"
   }
   ```
 - **404 Not Found:** Employee not found.
@@ -123,7 +123,7 @@
 {
   "name": "string",
   "email": "string",
-  "role": "string"
+  "group": "string"
 }
 ```
 **Response:**  
