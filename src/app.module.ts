@@ -28,6 +28,6 @@ import { AppService } from './app.service';
     AttendanceModule,
   ],
   controllers: [AppController],
-  providers:[AppService]
+  providers:[AppService],
 })
 export class AppModule {}
