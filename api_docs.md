@@ -18,7 +18,7 @@
 - **200 OK:**  
   ```json
   {
-    "token": "string"
+    "access_token": "string"
   }
   ```
 - **401 Unauthorized:** Invalid credentials.
@@ -34,7 +34,8 @@
 {
   "username": "string",
   "password": "string",
-  "email": "string"
+  "email": "string",
+  "group": "string",
 }
 ```
 **Response:**  
@@ -59,7 +60,7 @@
 {
   "name": "string",
   "email": "string",
-  "role": "string"
+  "group": "string"
 }
 ```
 **Response:**  
@@ -88,7 +89,7 @@
       "id": "string",
       "name": "string",
       "email": "string",
-      "role": "string"
+      "group": "string"
     }
   ]
   ```
