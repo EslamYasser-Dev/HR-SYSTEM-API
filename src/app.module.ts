@@ -8,6 +8,8 @@ import { AttendanceModule } from './attendance/attendance.module';
 import { User } from './auth/user.entity';
 import { Employee } from './employee/employee.entity';
 import { Attendance } from './attendance/attendance.enitiy';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
   imports: [
@@ -25,5 +27,7 @@ import { Attendance } from './attendance/attendance.enitiy';
     EmployeeModule,
     AttendanceModule,
   ],
+  controllers: [AppController],
+  providers:[AppService]
 })
 export class AppModule {}
